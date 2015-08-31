@@ -1,15 +1,11 @@
 from tkinter import *
-
 import random
 
 class SnakeGUI:
     def __init__(self):
         self.food_points = 0
-        
         self.coord_lst = []
-
         self.gameover = False
-        
         self.bool = False
         
         self.top = Tk()
@@ -42,13 +38,9 @@ class SnakeGUI:
                                               fill = "green")]
 
         self.pause()
-        
         self.food_make()
-        
         self.direction = [20,0]
-
         self.time = 500
-                    
         self.top.mainloop()
         
     def restart_game(self):
