@@ -53,7 +53,8 @@ class SnakeGUI:
         
     def restart_game(self):
         self.top.destroy()
-        SnakeGUI()                    
+        SnakeGUI()
+        
     def food_make(self):        
         self.xOne = random.randrange(40, 560, 20)
         self.yOne = random.randrange(40, 560, 20)
